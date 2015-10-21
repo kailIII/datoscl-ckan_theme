@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'gobCLRegular';
+  src: url('font/gobcl_regular-webfont.eot');
+  src: url('font/gobcl_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/gobcl_regular-webfont.ttf') format('truetype'),
+       url('font/gobcl_regular-webfont.svg#gobCLRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .account-masthead {
-    background-color: rgb(40, 40, 40);
+  background-color: #161a38;
 }
 
 .masthead {
@@ -14,10 +24,11 @@
 }
 
 .masthead .header-image .brand-text{
-    font-weight: bold;
-    font-size: 35px;
+	font-family: 'gobCLRegular';
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .masthead .header-image .brand-text.left{
-    color: #e03943;
+  color: #e03943;
 }
