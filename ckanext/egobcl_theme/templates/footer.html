@@ -1,4 +1,5 @@
-<footer class="site-footer">
+{#
+  <footer class="site-footer">
   <div class="container">
     {% block footer_content %}
     <div class="row">
@@ -36,4 +37,70 @@
       {% include 'snippets/debug.html' %}
     {% endif %}
   {% endblock %}
+
+</footer>
+#}
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span3 links">
+        <h3>Enlaces Internos</h3>
+        <ul class="nav menu-enlaces_internos">
+          <li id="menu-item-visualizadores">
+            <a href="http://datos.gob.cl/page/view/visualizadores">Visualizadores</a>
+          </li>
+          <li class="divider"></li>
+          <li id="menu-item-politica-de-privacidad">
+            <a href="http://datos.gob.cl/page/view/politica-de-privacidad">Política de Privacidad</a>
+          </li>
+          <li class="divider"></li><li id="menu-item-desarrolladores">
+          <a target="_self" href="http://recursos.datos.gob.cl/developers/">Desarrolladores</a>
+        </li>
+        <li class="divider"></li>
+        <li id="menu-item-recursos">
+          <a target="_blank" href="http://kitdigital.gob.cl/recursos-de-desarrollo/">Normativa de Datos Abiertos</a>
+        </li>
+        <li class="divider"></li>
+      </ul>
+    </div>
+    <div class="span4 links">
+      <h3>Sitios Relacionados</h3>
+      <ul class="nav menu-sitios_relacionados">
+        <li id="menu-item-chileatiende">
+          <a target="_blank" href="http://www.chileatiende.cl/">ChileAtiende</a>
+        </li>
+        <li class="divider"></li>
+        <li id="menu-item-comision-defensora-ciudadana-cdc">
+          <a target="_blank" href="http://www.comisiondefensoraciudadana.cl/">Comisión Defensora Ciudadana (CDC)</a>
+        </li>
+        <li class="divider"></li>
+        <li id="menu-item-gobierno-transparente-chile">
+          <a target="_blank" href="http://www.gobiernotransparentechile.cl/">Gobierno Transparente Chile</a>
+        </li>
+        <li class="divider"></li>
+        <li id="menu-item-open-government-partnership-plan-de-accion-chile">
+          <a target="_blank" href="http://www.ogp.cl/">Open Government Partnership - Plan de Acción Chile</a>
+        </li>
+        <li class="divider"></li>
+        <li id="menu-item-ley-facil-biblioteca-del-congreso-de-chile">
+          <a target="_blank" href="http://www.bcn.cl/guias/">Ley Fácil - Biblioteca del Congreso de Chile</a>
+        </li><li class="divider"></li>
+      </ul>
+    </div>
+    <div class="span3 info">
+      <p>
+        <a href="http://www.gobiernodechile.cl/" target="_blank">Gobierno de Chile</a><br>
+        <a href="http://www.modernizacion.gob.cl" target="_blank">Modernización y Gobierno Digital</a> <br>
+        <a href="http://www.minsegpres.gob.cl/" target="_blank">Ministerio Secretaría General de la Presidencia</a></p>
+        <p>
+          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/cl/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/cl/80x15.png"></a>
+        </p>
+      </div>
+      <div class="span2 info">
+        <p><a href="http://www.modernizacion.gob.cl" target="_blank"><img src="http://datos.gob.cl/assets/img/footer/logo_MyGD.png" alt="logo modernización"></a></p>
+        <p><strong>Gestionado con </strong> <a class="ckan-footer-logo" href="http://ckan.org">CKAN</a></p>
+      </div>
+    </div>
+  </div>
 </footer>
