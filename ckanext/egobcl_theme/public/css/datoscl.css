@@ -1,3 +1,10 @@
 .account-masthead {
     background-color: rgb(40, 40, 40);
 }
+
+.masthead {
+	background-image: url(../assets/img/fondo_header.png);
+	background-color: #161a38;
+	min-height: 100px;
+	height: 100px;
+}
