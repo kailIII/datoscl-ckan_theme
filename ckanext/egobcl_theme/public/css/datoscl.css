@@ -13,11 +13,11 @@
     margin-top: 11px;
 }
 
-.masthead .header-image .brand{
+.masthead .header-image .brand-text{
     font-weight: bold;
     font-size: 35px;
 }
 
-.masthead .header-image .brand.left{
+.masthead .header-image .brand-text.left{
     color: #e03943;
 }
