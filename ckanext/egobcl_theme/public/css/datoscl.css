@@ -8,3 +8,16 @@
 	min-height: 100px;
 	height: 100px;
 }
+
+.masthead .header-image {
+    margin-top: 11px;
+}
+
+.masthead .header-image .brand{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.masthead .header-image .brand.left{
+    color: #e03943;
+}
