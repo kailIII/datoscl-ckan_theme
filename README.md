@@ -10,15 +10,15 @@ Descargar el tema.
 git clone https://github.com/e-gob/datoscl-ckan_theme.git
 ```
 
-Luego, dentro del directorio del tema, ejecutar la instalaci√n
+Luego, dentro del directorio del tema, ejecutar la instalaci√≥n
 
 ```
-cd datoscl-ckan_them
+cd datoscl-ckan_theme
 python setup.py develop
 ```
 
-Para finalizar, incluir el plugin en el archivo de configuraci√n de CKAN (production.ini)
-para esto, se debe a√adir el plugin en la linea
+Para finalizar, incluir el plugin en el archivo de configuracin de CKAN (production.ini)
+para esto, se debe a√±adir el plugin en
 
 <i>
 ckan.plugins = ... datoscl-ckan_theme
