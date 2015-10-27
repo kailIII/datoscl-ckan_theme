@@ -84,6 +84,7 @@
       </style>
       {%- endif %}
     {% endblock %}
+    {% resource 'egobcl_theme/script.js' %} 
   </head>
 
   {# Allows custom attributes to be added to the <body> tag #}
@@ -115,15 +116,6 @@
       {# defined in the config.ini under "ckan.template_footer_end" #}
       {{ g.template_footer_end | safe }}
     {%- endblock %}
-    <script type="text/javascript">
-      window.____aParams = {"gobabierto":"1","buscadore":"1","domain":"www.chilesinpapeleo.cl","icons":"1"};
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.modernizacion.cl/barra/js/barraEstado.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script type="text/javascript" src="http://connect.facebook.net/es_CL/all.js#appId=107645905993653&amp;xfbml=1"></script>
+    
   </body>
 </html>

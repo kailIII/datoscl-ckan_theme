@@ -1,5 +1,10 @@
 <div role="main" class="">
   <div class="container">
+    {% block slider %}
+      {% snippet 'home/snippets/slider.html' %}
+    {% endblock %}
+  </div>
+  <div class="container">
     {% block search %}
       {% snippet 'home/snippets/search.html' %}
     {% endblock %}

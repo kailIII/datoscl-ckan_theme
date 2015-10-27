@@ -21,7 +21,7 @@
 	min-height: 100px;
 	height: 100px;
 }
-a, a:hover, a:active {
+a, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 .masthead .header-image {
@@ -38,6 +38,25 @@ a, a:hover, a:active {
 .masthead .header-image .brand-text.right {
   color: #7b6d7e;
 }
+
+.masthead .nav>li>a:hover {
+  background-color: transparent!important;
+}
+.nav-pills>li>a {
+  text-transform: uppercase;
+  font-size: 16px;
+  background-color: transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.nav-pills>li.active{
+  border-bottom: 2px solid #e03943;
+}
+.nav-pills>li:hover{
+  border-bottom: 2px solid #7b6d7e;
+}
+
 
 /* BODY */
 body {
@@ -121,3 +140,70 @@ body {
 .site-footer .container {
   padding-top: 100px;
 }
+
+/* Carousel */
+.carousel-container {
+  margin-left: 0 !important;
+}
+#myCarousel {
+  max-width: 1170px;
+  margin: 20px auto 0 auto;
+}
+
+#myCarousel .cont-carrusel-markers{
+  position:absolute;
+  overflow:hidden;
+  text-align: center;
+  left:45%;
+  bottom:10px;
+}
+
+#myCarousel .cont-carrusel-markers li {
+  float:left;
+  list-style: none;
+  margin-left:10px;
+  width:15px;
+  height:15px;
+}
+#myCarousel .cont-carrusel-markers li a{
+  background: url(/assets/img/marker.png) left -15px no-repeat;
+  text-indent: -9999px;
+  display: block; 
+}
+
+#myCarousel .cont-carrusel-markers li.active a{
+  background-position: left top;
+}
+
+#myCarousel .cont-carrusel-control {
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:40px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+#myCarousel .cont-carrusel-control.right{
+  left:auto;
+  right:0;
+}
+
+#myCarousel .carousel-control {
+  top: 50%;
+  border :0;
+  font-size:80px;
+  left:0px;
+  color:#fff;
+  line-height: 20px;
+  background-color: #232f4d;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+#myCarousel .carousel-control.right{
+  right:0px;
+  left:auto;
+}
+
