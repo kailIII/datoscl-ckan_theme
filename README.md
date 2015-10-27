@@ -17,8 +17,8 @@ cd datoscl-ckan_theme
 python setup.py develop
 ```
 
-Para finalizar, incluir el plugin en el archivo de configuracin de CKAN (production.ini)
-para esto, se debe añadir el plugin en
+Para finalizar, incluir el plugin en el archivo de configuración de CKAN (production.ini)
+para esto, se debe añadir el plugin en línea
 
 <i>
 ckan.plugins = ... datoscl-ckan_theme
