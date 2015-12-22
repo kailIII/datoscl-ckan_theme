@@ -9,17 +9,30 @@
   font-style: normal;
 }
 
+
+body > iframe#iframeBarra {
+    height: 30px;
+    border: 0;
+    padding: 0;
+}
+
+select {font-size: 12px;}
+input[type=text]{margin:2px;}
+
+/* HEADER */
+
 .account-masthead {
   background-color: #161a38;
 }
 
-/* HEADER */
-
 .masthead {
-	background-image: url(../assets/img/fondo_header.png);
-	background-color: #161a38;
-	min-height: 100px;
-	height: 100px;
+  background-image: url(../assets/img/fondo_header.png);
+  background-color: #161a38;
+  min-height: 100px;
+  height: 100px;
+}
+.masthead .nav-collapse {
+    padding-top: 30px !important;
 }
 a, a:hover, a:active, a:focus {
   text-decoration: none;
@@ -28,12 +41,14 @@ a, a:hover, a:active, a:focus {
     margin-top: 11px;
 }
 .masthead .header-image .brand-text{
-	font-family: 'gobCLRegular';
+  font-family: 'gobCLRegular';
   font-weight: bold;
   font-size: 35px;
+  margin-top: 26px;
 }
 .masthead .header-image .brand-text.left{
   color: #e03943;
+  margin-left: 10px;
 }
 .masthead .header-image .brand-text.right {
   color: #7b6d7e;
@@ -56,7 +71,11 @@ a, a:hover, a:active, a:focus {
 .nav-pills>li:hover{
   border-bottom: 2px solid #7b6d7e;
 }
-
+.page-header .content_action {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
 
 /* BODY */
 body {
@@ -80,6 +99,10 @@ body {
     box-shadow: 0; 
 }
 
+.nav-facet li.nav-item > a{
+  font-size: 12px;
+  text-transform: uppercase;
+}
 .homepage .module-search .module-content {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -131,6 +154,21 @@ body {
 .multimedia {
   background: url(/assets/img/multimedia.png) 10px top no-repeat;
 }
+.popular {
+  background-color: #dff0d8;
+  margin-left: 5px;
+}
+.context-info .nums dl {
+    width: 100%;
+}
+.context-info .nums dl dd {
+    font-size: 72px;
+    line-height: 90px;
+}
+h3.dataset-heading p.owner-org {
+  font-size: 12px;
+  text-transform: uppercase;
+}
 
 /* FOOTER */
 .site-footer {
@@ -140,6 +178,10 @@ body {
 .site-footer .container {
   padding-top: 100px;
 }
+.site-footer .container .row-fluid .info {
+  margin-top: 40px;
+}
+.links ul li a:hover, .links ul li a:focus {background-color: transparent !important; text-decoration: underline !important;}
 
 /* Carousel */
 .carousel-container {
@@ -205,5 +247,45 @@ body {
 #myCarousel .carousel-control.right{
   right:0px;
   left:auto;
+}
+
+/*RESET FORM*/
+
+label.reset-label {
+  width: 200px;
+  text-align: right;
+}
+div.form-submit {
+  text-align: center;
+  padding: 10px;
+}
+div.form-submit button.reset {
+  display: none;
+}
+
+/* home snippets */
+.homepage .stats ul li {
+  width: 33% !important;
+  text-align: center;
+}
+.module-content:first-child {
+    margin-top: 0;
+    padding-top: 0; 
+}
+.snippet-box {
+  margin-bottom: 35px;
+}
+.snippet-box h2{
+  text-transform: uppercase;
+}
+
+/*Modal*/
+.modal {
+  min-width: 640px;
+}
+
+/*Politica de privacidad*/
+.ckanext-pages-content > [class*="span"] {
+  margin-left: 0 !important;
 }
 

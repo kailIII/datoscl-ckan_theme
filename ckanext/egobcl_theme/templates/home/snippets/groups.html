@@ -1,0 +1,12 @@
+<pre>
+	{{c.groups_available}}
+</pre>
+
+<div class="snippet-box groups">
+  <div class="inner">
+    <h2>Listado de Categorías</h2>
+    {% for group in groups_available %}
+      <a class="group tag" href="/group/{{ group.name }}">{{ h.truncate(group.display_name, 22) }}</a>
+    {% endfor %}
+  </div>
+</div>

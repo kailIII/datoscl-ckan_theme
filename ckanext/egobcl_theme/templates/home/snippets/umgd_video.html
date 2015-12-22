@@ -1,0 +1,15 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content">
+  {% block home_image %}
+    <section class="featured media-overlay hidden-phone">
+      {% block home_image_content %}
+        <iframe src="http://player.vimeo.com/video/43616690?badge=0" width="540" height="460" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+        </iframe>
+        <p>
+          <a href="http://vimeo.com/43616690">Portal de datos públicos datos.gob.cl</a> de <a href="http://vimeo.com/modernizacioncl">Modernización y Gob Digital</a> en <a href="http://vimeo.com">Vimeo</a>.
+        </p>
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

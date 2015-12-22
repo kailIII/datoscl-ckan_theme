@@ -13,10 +13,23 @@
       <h1 class="page-heading">{{ _('Reset your password') }}</h1>
       {% block form %}
         <form action="" method="post" class="form-inline control-medium">
-          <label for="field-username">{{ _('Username') }}</label>
-          <input id="field-username" name="user" value="" type="text" />
+          <div>
+            <label class="reset-label" for="field-email">{{ _('Email') }}</label>
+            <input id="field-email" name="email" value="" type="text"/>
+          </div>
+          <div>
+            <label class="reset-label" for="field-rut">RUT</label>
+            <input id="field-rut" name="rut" value="" type="text" placeholder="ej. 12.345.678-k"/>
+          </div>
+          <div>
+            <label class="reset-label" for="field-username">{{ _('Username') }}</label>
+            <input id="field-username" name="user" value="" type="text" readonly="readonly"/>
+          </div>
           {% block form_button %}
-          <button class="btn btn-primary" type="submit" name="reset">{{ _("Request reset") }}</button>
+          <div class="form-submit">
+            <button class="btn check" type="submit" name="check">Obtener nombre de usuario</button>
+            <button class="btn btn-primary reset" type="submit" name="reset">Solicitar Cambio de Clave</button>
+          </div>
           {% endblock %}
         </form>
       {% endblock %}
@@ -37,4 +50,7 @@
     {% endblock %}
   </section>
   {% endblock %}
+
+  {% resource 'egobcl_theme/reset.js' %}
+
 {% endblock %}

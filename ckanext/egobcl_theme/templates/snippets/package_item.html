@@ -43,6 +43,9 @@ Example:
               {% endif %}
               {{ h.popular('recent views', package.tracking_summary.recent, min=10) if package.tracking_summary }}
             {% endblock %}
+            {% block heading_owner %}
+            <p class="owner-org">Publicado por {{package.organization.title}}</p>
+            {% endblock %}
           </h3>
         {% endblock %}
         {% block banner %}
