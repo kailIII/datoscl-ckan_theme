@@ -288,11 +288,6 @@ Example:
   {% if errors %}
     <div class="error-explanation alert alert-{{ type }}{{ " " ~ classes | join(' ') }}">
       <p>{{ _('The form contains invalid entries:') }}</p>
-      <ul>
-        {% for key, error in errors.items() %}
-          <li data-field-label="{{ key }}">{% if key %}{{ key }}: {% endif %}{{ error }}</li>
-        {% endfor %}
-      </ul>
     </div>
   {% endif %}
 {% endmacro %}
